@@ -1,0 +1,29 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@import 'app.scss';
+
+@include font-face(
+  'OfficinaSerifMediumC',
+  '/fonts/OfficinaSerifMediumC',
+  null,
+  null,
+  $font-extensions
+);
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+a{
+  outline: none;
+}
+#__next {
+  width: 100%;
+  overflow: hidden;
+}

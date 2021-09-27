@@ -1,0 +1,42 @@
+
+.input_item{
+  margin-bottom: 32px;
+  .input_label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #FF6900;
+  }
+  input{
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 70, 100, 0.15);
+    border-radius: 20px;
+    padding: 17px 45px 16px 28px;
+    width: 500px;
+    outline: none;
+    margin-top: 4px;
+  }
+}
+
+@media(max-width: 600px){
+  .input_item{
+    .input_label{
+      font-size: 14px;
+      line-height: 127.68%;
+    }
+    input{
+      width: 335px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+@media(max-width: 374px){
+  .input_item{
+    input{
+      width: 280px;
+    }
+  }
+}

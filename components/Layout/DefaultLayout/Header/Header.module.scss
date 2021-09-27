@@ -1,0 +1,77 @@
+.root {
+  background-color: $white;
+  height: 122px;
+  width: 100%;
+  .header_container{
+    max-width: 1214px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    justify-content: space-between;
+    a{
+      color: #40748B;
+    }
+    .header_logo{
+      width: fit-content;
+    }
+    .header_menu{
+      .header_menuLink{
+        margin-right: 24px;
+        padding-bottom: 2px;
+        &:hover{
+          border-bottom: 2px solid #FF6900;
+        }
+        &:last-child{
+          margin-right: unset;
+        }
+      }
+    }
+    .header_login{
+      a{
+        padding-bottom: 2px;
+        &:hover{
+          border-bottom: 2px solid #FF6900;
+        }
+      }
+      .header_signup{
+        margin-right: 12px;
+      }
+      .header_signin{
+        color: #FF6900;
+      }
+    }
+  }
+  .responsive_header{
+    display: none;
+  }
+}
+
+@media (max-width: 1250px){
+  .root{
+    .header_container{
+      max-width: 1024px;
+    }
+  }
+}
+@media(max-width: 1025px){
+  .root{
+    height: 90px;
+    .header_container{
+      display: none;
+    }
+    .responsive_header{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px 0 20px;
+    }
+  }
+}
+

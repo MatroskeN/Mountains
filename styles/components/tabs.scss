@@ -1,0 +1,24 @@
+.nav-tabs {
+  border-bottom: none;
+  margin: 0 -42px;
+
+  .nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #aeaeae;
+    margin: 0;
+    border: none;
+    padding: 15px 42px;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: #171717;
+    border: none;
+  }
+}

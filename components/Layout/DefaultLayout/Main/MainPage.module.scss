@@ -1,0 +1,1019 @@
+.root{
+  position: relative;
+  button{
+    outline: none;
+  }
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 682px;
+  .banner_pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  .mbanner_pic{
+    display: none;
+  }
+  .banner_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(64, 116, 139, 0.55);
+  }
+  .banner_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    margin-bottom: 24px;
+    margin-top: 248px;
+  }
+  .banner_subtitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #F1F1F1;
+    z-index: 2;
+    margin-bottom: 40px;
+  }
+  .mbanner_subtitle{
+    display: none;
+  }
+  .banner_btn{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    background: #FF6900;
+    border-radius: 15px;
+    padding: 22px 46px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+  }
+}
+.facts{
+  .facts_container{
+    display: flex;
+    margin: 120px auto 140px;
+    max-width: 1116px;
+    width: 100%;
+    justify-content: space-between;
+    .facts_item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .fact_title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #1F3C48;
+        margin-top: 18px;
+        margin-bottom: 6px;
+      }
+      .fact_subtitle{
+        max-width: 225px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 141.5%;
+        text-align: center;
+        color: #676767;
+      }
+    }
+  }
+  .mfacts_container{
+    display: none;
+  }
+}
+.tagline{
+  background: #40748B;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .tagline_logo{
+    width: 194px;
+    height: 42px;
+    margin-bottom: 41px;
+    margin-top: 52px;
+  }
+  .tagline_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    max-width: 689px;
+  }
+}
+.moreFacts{
+  .moreFacts_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #1F3C48;
+    margin-top: 140px;
+    margin-bottom: 40px;
+  }
+  .moreFacts_container{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1214px;
+    width: 100%;
+    margin: 0 auto 130px;
+    .moreFacts_item{
+      width: 398px;
+      height: 386px;
+      background: #FFFFFF;
+      box-shadow: 5px 5px 15px rgba(0, 70, 100, 0.15);
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      &:nth-child(3n+3){
+        margin-right: unset;
+      }
+      .moreFact_pic{
+        margin-top: 40px;
+      }
+      .moreFact_title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 140%;
+        text-align: center;
+        color: #FF6900;
+        margin-top: 12px;
+      }
+      .moreFact_subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 148.68%;
+        text-align: center;
+        letter-spacing: -0.005em;
+        color: #757575;
+        margin-top: 12px;
+        max-width: 320px;
+      }
+      .moreFact_mSubtitle{
+        display: none;
+      }
+    }
+  }
+}
+.geo{
+  width: 100%;
+  height: 495px;
+  background: #40748B;
+  display: flex;
+  .geo_titles{
+    margin-top: 136px;
+    margin-left: 112px;
+    margin-right: 37px;
+    .geo_title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 38px;
+      line-height: 40px;
+      letter-spacing: 0.1px;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      max-width: 397px;
+    }
+    .geo_subtitle{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 140%;
+      color: #CDCDCD;
+    }
+  }
+  .geo_pics{
+    display: flex;
+    margin-top: 80px;
+    .geo_item{
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      img{
+        margin-left: -10px;
+        margin-bottom: -12px;
+      }
+      .geo_label{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+      }
+      .geo_number{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        color: #CDCDCD;
+        margin-top: 8px;
+      }
+    }
+  }
+  .geo_slider{
+    display: none;
+  }
+}
+.views{
+  width: 100%;
+  margin-bottom: 136px;
+  .views_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #1F3C48;
+    margin-top: 140px;
+    margin-bottom: 40px;
+  }
+  .view_swiper{
+    max-width: 1010px;
+    width: 100%;
+    margin: 0 auto;
+    .view_slide{
+      max-width: 1010px;
+      img{
+        border-radius: 40px;
+      }
+      .slide_title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #1F3C48;
+        margin-top: 24px;
+      }
+    }
+  }
+}
+.offers{
+  margin-bottom: 144px;
+  .offers_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #1F3C48;
+    margin-bottom: 40px;
+  }
+  .offers_container{
+    display: flex;
+    max-width: 1214px;
+    width: 100%;
+    margin: 0 auto;
+    .offers_item{
+      margin-right: 10px;
+      &:last-child{
+        margin-right: unset;
+      }
+
+      .offers_label{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #757575;
+        margin-top: 12px;
+        max-width: 380px;
+      }
+    }
+  }
+}
+.brands{
+  .brands_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #1F3C48;
+    margin-bottom: 40px;
+  }
+  .brands_swiper{
+    width: 100%;
+    height: 897px;
+    background: #40748B;
+    .brand_slide{
+      .brandsSwiper_title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        margin-top: 47px;
+        margin-bottom: 38px;
+        color: #FFFFFF;
+      }
+      .brandSlide_items{
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1011px;
+        width: 100%;
+        height: 630px;
+        margin: 0 auto;
+        justify-content: space-between;
+        .brand_item{
+          img{
+            border-radius: 40px;
+          }
+          .brandSlide_title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 29px;
+            letter-spacing: 0.1px;
+            color: #FFFFFF;
+            margin-top: 12px;
+            max-width: 230px;
+          }
+        }
+      }
+    }
+  }
+  .mBrands_container{
+    display: none;
+  }
+}
+.resorts{
+  margin-top: 120px;
+  margin-bottom: 137px;
+  .resorts_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #1F3C48;
+    margin-bottom: 69px;
+  }
+  .resorts_container{
+    display: flex;
+    max-width: 1214px;
+    width: 100%;
+    margin: 0 auto;
+    .resorts_item{
+      margin-right: 10px;
+      &:last-child{
+        margin-right: unset;
+      }
+      .resortItem_label{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #1F3C48;
+        max-width: 296px;
+        margin-top: 24px;
+      }
+    }
+  }
+  .mResorts_container{
+    display: none;
+  }
+}
+.registry{
+  max-width: 1214px;
+  width: 100%;
+  height: 257px;
+  margin: 0 auto 185px;
+  background: #40748B;
+  box-shadow: 5px 5px 15px rgba(0, 70, 100, 0.15);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .registry_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+  }
+  .registry_btn{
+    background: #FF6900;
+    border-radius: 15px;
+    padding: 22px 46px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .modal_mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(64, 116, 139, 0.8);
+    z-index: 10;
+  }
+  .modal_window{
+    position: absolute;
+    z-index: 15;
+    top: 162px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 475px;
+    height: 302px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .modal_close{
+      position: absolute;
+      top: 24px;
+      right: 24px;
+    }
+    .modal_title{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #1F3C48;
+      margin-top: 50px;
+      margin-bottom: 24px;
+    }
+    input{
+      background: #FFFFFF;
+      box-shadow: 5px 5px 30px rgba(0, 70, 100, 0.12);
+      border-radius: 20px;
+      width: 296px;
+      padding: 12px 5px 19px 19px;
+      margin-bottom: 32px;
+    }
+    .modal_btn{
+      background: #FF6900;
+      border-radius: 15px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 22px 75px;
+    }
+  }
+}
+@media(max-width: 1250px){
+  .moreFacts{
+    .moreFacts_container{
+      max-width: 900px;
+      justify-content: space-between;
+    }
+  }
+}
+@media(max-width: 900px){
+  .moreFacts{
+    .moreFacts_container{
+      max-width: 400px;
+    }
+  }
+  .brands{
+    .brands_swiper{
+      .brand_slide{
+        .brandSlide_items{
+          display: flex;
+          flex-flow: row wrap;
+          max-width: 600px;
+          width: 100%;
+          height: 630px;
+          margin: 0 auto;
+          justify-content: space-around;
+          .brand_item{
+            img{
+              width: 150px;
+            }
+            margin-right: 20px;
+            margin-bottom: 30px;
+            .brandSlide_title{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 29px;
+              letter-spacing: 0.1px;
+              color: #FFFFFF;
+              margin-top: 12px;
+              max-width: 150px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 601px){
+  .banner{
+    height: 531px;
+    .banner_title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 128.5%;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 80px auto 0;
+      max-width: 245px;
+    }
+    .banner_subtitle{
+      display: none;
+    }
+    .mbanner_subtitle{
+      display: flex;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 127.68%;
+      text-align: center;
+      letter-spacing: -0.005em;
+      color: #F1F1F1;
+      margin: 24px auto 158px;
+      max-width: 176px;
+      z-index: 2;
+    }
+    .banner_btn{
+      padding: 21px 37px;
+      font-size: 16px;
+      line-height: 16px;
+      border-radius: 10px;
+    }
+    .banner_pic{
+      display: none;
+    }
+    .mbanner_pic{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .banner_bg{
+      border-radius: 20px;
+    }
+  }
+  .facts{
+    .facts_container{
+      display: none;
+    }
+    .mfacts_container{
+      display: flex;
+      margin-top: 69px;
+      margin-bottom: 69px;
+      .facts_swiper{
+        .fact_slide{
+          max-width: 175px;
+          .factSlide_title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #1F3C48;
+          }
+          .factSlide_subtitle{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            color: #676767;
+          }
+        }
+      }
+    }
+  }
+  .tagline{
+    width: 100%;
+    height: 274px;
+    border-radius: 40px;
+    .tagline_logo{
+      width: 132px;
+      height: 29px;
+      margin-top: 167px;
+    }
+    .tagline_title{
+      display: none;
+    }
+  }
+  .moreFacts{
+    .moreFacts_title{
+      margin-top: 80px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #1F3C48;
+      margin-bottom: 24px;
+    }
+    .moreFacts_container{
+      max-width: 335px;
+      margin-bottom: 80px;
+      .moreFacts_item{
+        width: 157px;
+        height: 146px;
+        &:nth-child(3n+3){
+          margin-right: 10px;
+        }
+        &:nth-child(2n+2){
+          margin-right: unset;
+        }
+        .moreFact_pic{
+          margin-top: 17px;
+          width: 68px;
+          height: 62px;
+        }
+        .moreFact_title{
+          font-size: 14px;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+        .moreFact_subtitle{
+          display: none;
+        }
+        .moreFact_mSubtitle{
+          display: flex;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 8px;
+          line-height: 120.68%;
+          text-align: center;
+          letter-spacing: -0.005em;
+          color: #757575;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+  .geo{
+    background: #FFFFFF;
+    flex-direction: column;
+    height: auto;
+    .geo_titles{
+      margin: 0 auto;
+      .geo_title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #1F3C48;
+        margin-bottom: 12px;
+        max-width: 260px;
+      }
+      .geo_subtitle{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #757575;
+      }
+    }
+    .geo_pics{
+      display: none;
+    }
+    .geo_slider{
+      margin-top: 19px;
+      display: flex;
+      .geo_swiper{
+        .geo_slide{
+          width: 335px;
+          height: 242px;
+          border-radius: 40px;
+          position: relative;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            box-shadow: 5px 5px 15px rgba(0, 70, 100, 0.15);
+          }
+          .geo_mask{
+            position: absolute;
+            background: rgba(64, 116, 139, 0.2);
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+          }
+          .geoSlide_title{
+            position: relative;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.1px;
+            color: #FFFFFF;
+            margin: 156px 0 4px 32px;
+            z-index: 2;
+          }
+          .geoSlide_subtitle{
+            position: relative;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.3px;
+            color: #CDCDCD;
+            z-index: 2;
+            margin-left: 32px;
+          }
+          .geoSlide_link{
+            position: absolute;
+            right: 40px;
+            bottom: 43px;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+  .views{
+    margin-bottom: 80px;
+    .views_title{
+      margin-top: 80px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      margin-bottom: 24px;
+    }
+    .view_swiper{
+      .view_slide{
+        max-width: 291px;
+        .slide_title{
+          font-size: 16px;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .offers{
+    margin-bottom: 73px;
+    .offers_title{
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+    .offers_container{
+      max-width: unset;
+      padding: 0 20px 0 20px;
+      flex-direction: column;
+      .offers_item{
+        margin-right: unset;
+        .offers_label{
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .brands{
+    .brands_title{
+      display: none;
+    }
+    .brands_container{
+      display: none;
+    }
+    .mBrands_container{
+      background: #40748B;
+      height: 565px;
+      width: 100%;
+      overflow-x: auto;
+      .mBrands_title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+        margin-top: 32px;
+      }
+      .mBrands_subtitle{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #FFFFFF;
+        margin-top: 12px;
+      }
+      .mBrands_pics{
+        width: 610px;
+        height: 400px;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: column;
+        .first_row,.second_row{
+          display: flex;
+          overflow-x: auto;
+          margin-left: 20px;
+          margin-top: 20px;
+          .mBrands_item{
+            margin-right: 10px;
+
+            &:nth-child(4n+4){
+              margin-right: unset;
+            }
+          }
+          img{
+            width: 145px;
+            height: 131px;
+            border-radius: 10px;
+          }
+          .mBrands_itemTitle{
+            max-width: 145px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+  .resorts{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .resorts_title{
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+    .resorts_container{
+      display: none;
+    }
+    .mResorts_container{
+      display: flex;
+      .resort_swiper{
+        .resort_slide{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: fit-content;
+          img{
+            width: 253px;
+          }
+          .resortSlide_title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 148%;
+            text-align: center;
+            color: #1F3C48;
+            margin-top: 12px;
+            max-width: 253px;
+          }
+        }
+      }
+    }
+  }
+  .registry{
+    max-width: unset;
+    margin-bottom: 160px;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 274px;
+    .registry_title{
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+    }
+    .registry_btn{
+      padding: 21px 37px;
+      border-radius: 10px;
+    }
+  }
+  .modal{
+    .modal_mask{
+      background: rgba(64, 116, 139, 0.5);
+    }
+    .modal_window{
+      width: 336px;
+      height: 327px;
+      border-radius: 30px;
+      .modal_title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+      }
+      input{
+        outline: none;
+        font-size: 14px;
+        width: 273px;
+        padding: 13px 5px 15px 19px;
+        &::placeholder{
+          font-size: 14px;
+        }
+      }
+      .modal_btn{
+        padding: 22px 73px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media(max-width: 374px){
+  .root{
+    .moreFacts{
+      .moreFacts_container{
+        justify-content: center;
+        .moreFacts_item{
+          margin-right: 10px;
+        }
+      }
+    }
+    .modal{
+      .modal_window{
+        width: 300px;
+      }
+    }
+  }
+}

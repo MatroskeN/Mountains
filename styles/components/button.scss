@@ -1,0 +1,160 @@
+button {
+  display: block;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn {
+  border: none;
+  transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+
+  &-primary,
+  &-secondary {
+    background-color: $red;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    padding: 10px 15px;
+    border-radius: 100px;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 11px;
+      line-height: 145%;
+      padding: 7px 12px;
+    }
+
+    &:hover {
+      background-color: $red;
+      box-shadow: 0 5px 10px 0 transparentize($color: $red, $amount: 0.7);
+    }
+
+    &:focus {
+      background-color: $red2;
+    }
+  }
+
+  &-secondary {
+    background-color: #f8f8f8;
+    color: $black5;
+
+    &:hover {
+      background-color: $red;
+      box-shadow: 0 5px 10px 0 transparentize($color: $red, $amount: 0.7);
+    }
+
+    &:focus {
+      background-color: $red2;
+    }
+  }
+
+  &-lg {
+    min-width: 168px;
+
+    @include media-breakpoint-down(xl) {
+      min-width: 119px;
+    }
+  }
+
+  &-min {
+    min-width: 215px;
+
+    @include media-breakpoint-down(xl) {
+      min-width: 120px;
+    }
+  }
+
+  &-white {
+    background-color: $white;
+    color: transparentize($color: #171717, $amount: 0.64);
+
+    &:hover {
+      color: #171717;
+    }
+  }
+
+  &.icon {
+    padding: 11px;
+    border-radius: 100px;
+    min-width: 34px;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-down(lg) {
+      min-width: 30px;
+      min-height: 30px;
+      padding: 9px;
+    }
+  }
+
+  &-gray {
+    background-color: #efefef;
+    color: transparentize($color: #171717, $amount: 0.64);
+
+    &:hover {
+      color: #171717;
+    }
+
+    &.active {
+      background-color: white;
+      color: #171717;
+    }
+
+    &.icon {
+      &.active {
+        background-color: white;
+        color: $red;
+      }
+    }
+  }
+
+  &.active {
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &.small {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    padding: 7px 14px;
+    border-radius: 34px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+}
+
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -7px;
+
+  .btn {
+    margin: 7px;
+  }
+
+  &.toggle {
+    background-color: #efefef;
+    border-radius: 200px;
+
+    .btn {
+      margin: 0;
+    }
+  }
+}

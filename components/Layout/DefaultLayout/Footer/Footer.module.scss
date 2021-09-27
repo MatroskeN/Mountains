@@ -1,0 +1,187 @@
+.root {
+  background-color: #40748B;
+  color: $white;
+  margin-top: auto;
+  width: 100%;
+  height: 516px;
+  .footer_container{
+    display: flex;
+    max-width: 1214px;
+    width: 100%;
+    margin: 119px auto 0;
+    justify-content: space-between;
+    .footer_icons{
+      .footer_socialLinks{
+        display: flex;
+        justify-content: space-between;
+        width: 194px;
+        margin-top: 30px;
+      }
+    }
+    .footer_menu{
+      display: flex;
+      .footer_menuService{
+        display: flex;
+        flex-direction: column;
+        &:first-child{
+          margin-right: 120px;
+        }
+        .column_title{
+          font-style: normal;
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 19px;
+          /* identical to box height */
+
+          text-transform: uppercase;
+          margin-bottom: 17px;
+        }
+        a{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          /* identical to box height */
+          margin-bottom: 7px;
+          color: #FFFFFF;
+          &:last-child{
+            margin-bottom: unset;
+          }
+        }
+      }
+    }
+    .footer_info{
+      display: flex;
+      flex-direction: column;
+      .footer_phone{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        margin-bottom: 28px;
+      }
+      .footer_mail{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-bottom: 17px;
+      }
+      .footer_links{
+        display: flex;
+        flex-direction: column;
+        a{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  .responsive_footer{
+    display: none;
+  }
+}
+
+@media(max-width: 1250px){
+  .root{
+    .footer_container{
+      max-width: 768px;
+      .footer_menu{
+        .footer_menuService{
+          &:first-child{
+            margin-right: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 769px){
+  .root{
+    height: 354px;
+    .footer_container{
+      display: none;
+    }
+    .responsive_footer{
+      display: flex;
+      padding: 36px 52px 10px 19px;
+      justify-content: space-evenly;
+      .leftMenu{
+        margin-top: 36px;
+        display: flex;
+        .leftMenu_service{
+          display: flex;
+          flex-direction: column;
+          &:first-child{
+            margin-right: 16px;
+          };
+          &:last-child{
+            max-width: 63px;
+          }
+          .leftMenu_serviceTitle{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 10px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+          }
+          .leftMenu_serviceLink{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            line-height: 11px;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+          }
+        }
+      }
+      .rightColumn_contacts{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 36px;
+        a{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 14px;
+          text-align: left;
+          color: #FFFFFF;
+        }
+      }
+      .rightColumn_menu{
+        display: flex;
+        flex-direction: column;
+        .rightColumn_menuTitle{
+          font-style: normal;
+          font-weight: 800;
+          font-size: 10px;
+          line-height: 14px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-bottom: 8px;
+        }
+        .rightColumn_menuLink{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 8px;
+          line-height: 171.68%;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 426px){
+  .root{
+    .responsive_footer{
+      justify-content: space-between;
+    }
+  }
+}

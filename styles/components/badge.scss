@@ -1,0 +1,33 @@
+.badge {
+  &-icon {
+    display: inline-grid;
+    grid-template-columns: 14px 1fr;
+    align-items: center;
+    column-gap: 10px;
+
+    span {
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 5px 12px;
+  }
+}
+
+.bg-secondary {
+  background: transparentize($color: $white, $amount: 0.3) !important;
+  color: transparentize($color: #171717, $amount: 0.6) !important;
+}
+
+.form-check {
+  @include media-breakpoint-down(lg) {
+    font-size: 13px;
+    line-height: 20px;
+    min-height: auto;
+  }
+}
